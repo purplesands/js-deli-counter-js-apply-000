@@ -1,7 +1,9 @@
-
-function takeANumber(line, name){
-  line.push(name);
-  return "Welcome, " + name + ". You are number " + line.length + " in line."
+var line = [];
+var deliNumber = 20;
+function takeANumber(line){
+  deliNumber++
+  line.push(deliNumber);
+  return "Welcome,  you are number " + deliNumber + " in line."
 }
 
 function nowServing(line) {
@@ -23,6 +25,5 @@ function currentLine(line){
   }
   return "The line is currently: " + linesNamesNumbers.join(', ');
 }
-
 
 
